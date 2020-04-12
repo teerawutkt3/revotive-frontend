@@ -1,5 +1,5 @@
 <template>
-    <Button color="outline-danger" :id="this.id" :click="this.click"><i class="fa fa-trash" aria-hidden="true"></i> Delete</Button>
+    <Button color="danger" :size="this.size" :click="this.click"><i class="fa fa-trash" aria-hidden="true"></i> Delete</Button>
 </template>
 
 <script>
@@ -9,7 +9,10 @@
             click: {
                 type: Function
             },
-            id: String
+            size: {
+                type: String,
+                default: 'md'
+            }
         },
         components:{
             Button

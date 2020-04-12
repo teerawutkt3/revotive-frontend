@@ -1,5 +1,5 @@
 <template>
-    <Button color="outline-info" :id="this.id" :click="this.click">Print</Button>
+    <Button color="info" :size="this.size" :click="this.click"><i class="fas fa-print"></i>&nbsp;Print</Button>
 </template>
 
 <script>
@@ -11,7 +11,10 @@
             click: {
                 type: Function
             },
-            id: String
+            size: {
+                type: String,
+                default: 'md'
+            },
         },
         components: {
             Button

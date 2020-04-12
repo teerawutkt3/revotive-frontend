@@ -8,9 +8,9 @@
             <div class="container-fluid d-flex align-items-center">
                 <div class="row">
                     <div class="col-lg-7 col-md-10">
-                        <b-save></b-save>
                         <h1 class="display-2 text-white">Hello Jesse</h1>
-                        <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+                        <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made
+                            with your work and manage your projects or assigned tasks</p>
                         <a href="#!" class="btn btn-info">Edit profile</a>
                     </div>
                 </div>
@@ -69,8 +69,9 @@
                                 <div>
                                     <i class="ni education_hat mr-2"></i>University of Computer Science
                                 </div>
-                                <hr class="my-4" />
-                                <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
+                                <hr class="my-4"/>
+                                <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
+                                    performs and records all of his own music.</p>
                                 <a href="#">Show more</a>
                             </div>
                         </div>
@@ -130,7 +131,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="my-4" />
+                                <hr class="my-4"/>
                                 <!-- Address -->
                                 <h6 class="heading-small text-muted mb-4">Contact information</h6>
                                 <div class="pl-lg-4">
@@ -171,14 +172,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="my-4" />
+                                <hr class="my-4"/>
                                 <!-- Description -->
                                 <h6 class="heading-small text-muted mb-4">About me</h6>
                                 <div class="pl-lg-4">
                                     <div class="form-group">
                                         <base-input alternative=""
                                                     label="About Me">
-                                            <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+                                            <textarea rows="4" class="form-control form-control-alternative"
+                                                      placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
                                         </base-input>
                                     </div>
                                 </div>
@@ -191,23 +193,30 @@
     </div>
 </template>
 <script>
-  export default {
-    name: 'user-profile',
-    data() {
-      return {
-        model: {
-          username: '',
-          email: '',
-          firstName: '',
-          lastName: '',
-          address: '',
-          city: '',
-          country: '',
-          zipCode: '',
-          about: '',
-        }
-      }
-    },
-  };
+    export default {
+        name: 'user-profile',
+        data() {
+            return {
+                model: {
+                    username: '',
+                    email: '',
+                    firstName: '',
+                    lastName: '',
+                    address: '',
+                    city: '',
+                    country: '',
+                    zipCode: '',
+                    about: '',
+                }
+            }
+        },
+        methods: {
+            testClick() {
+                // eslint-disable-next-line no-console
+                console.log("click test")
+            }
+        },
+
+    };
 </script>
 <style></style>

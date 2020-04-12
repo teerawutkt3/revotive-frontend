@@ -1,5 +1,5 @@
 <template>
-    <Button  color="outline-warning" :id="this.id" :click="this.click">Edit</Button>
+    <Button  color="warning" :size="this.size"  :click="this.click"><i class="fas fa-edit"></i>&nbsp;Edit</Button>
 </template>
 
 <script>
@@ -11,7 +11,10 @@
             click: {
                 type: Function
             },
-            id: String
+            size: {
+                type: String,
+                default: 'md'
+            }
         },
         components: {
             Button

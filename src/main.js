@@ -19,9 +19,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import components from './component'
-import './registerServiceWorker'
 import ArgonDashboard from './plugins/argon-dashboard'
+import VueScrollTo from 'vue-scrollto'
+import './registerServiceWorker'
+import 'jquery/dist/jquery.min'
+import 'datatables.net-bs4/css/dataTables.bootstrap4.min.css'
+import 'datatables.net-bs4/js/dataTables.bootstrap4.min'
 
+Vue.use(VueScrollTo)
 //==> Buttons component
 for (let i = 0; i < components.buttons.length; i++){
   Vue.component(components.buttons[i].name, components.buttons[i].component)

@@ -1,5 +1,5 @@
 <template>
-    <Button color="outline-secondary" :id="this.id" :click="this.click">Cancel</Button>
+    <Button color="default" :size="this.size" :click="this.click">Cancel</Button>
 </template>
 
 <script>
@@ -12,7 +12,10 @@
                 type: Function,
                 default:()=>{}
             },
-            id: String
+            size: {
+                type: String,
+                default: 'md'
+            }
         },
         components: {
             Button

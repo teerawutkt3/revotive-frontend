@@ -1,20 +1,26 @@
 <template>
-    <b-button size="sm"  :id="this.id" :variant="this.color" @click="click"><slot></slot></b-button>
-    <base-button outline type="success">Success</base-button>
+    <base-button :size="size" :nativeType="this.type" :type="this.color" @click="this.click" >
+        <slot></slot>
+    </base-button>
 </template>
 
 <script>
     export default {
-        name: "base-button",
+        name: "b-button",
+
         props: {
             click: {
                 type: Function,
-                default: ()=>{}
-            },            
-            color: String,
-            id: {
+                default: () => {
+                }
+            },
+            color: {
                 type: String,
-                default: ''
+                default: 'default'
+            },
+            size: {
+                type: String,
+                default: 'md'
             },
             type: {
                 type: String,
